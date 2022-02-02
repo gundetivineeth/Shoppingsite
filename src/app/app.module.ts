@@ -10,6 +10,9 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { DropdowntoggleDirective } from './shared/dropdowntoggle.directive';
+import { RouterModule } from '@angular/router';
+import { AppRouteModule } from './app-route.module';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +24,12 @@ import { DropdowntoggleDirective } from './shared/dropdowntoggle.directive';
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    DropdowntoggleDirective
+    DropdowntoggleDirective,
+    RecipeEditComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRouteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
